@@ -1,5 +1,5 @@
 def hello
-  5.times {puts "こんにちは！"}
+  3.times {puts "こんにちは！"}
 end
 
 hello()
@@ -14,7 +14,7 @@ def sheep(n)
   end
 end
 
-sheep(10)
+sheep(3)
 # -------------------------------------
 def sum_1_100
   num = 1
@@ -39,3 +39,14 @@ def sum(x,y)
 end
 
 sum(11,20)
+#-----------------------------------------
+def fibonacci(day)
+  fib = [0,1]
+  (day-1).times do
+    fib << fib[-1] + fib[-2]
+  end
+  puts fib[day]
+end
+
+fibonacci(30)
+#------------------------------------------
