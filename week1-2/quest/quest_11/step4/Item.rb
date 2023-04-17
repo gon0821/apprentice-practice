@@ -16,12 +16,3 @@ class Item
 
 end
 
-# cola = Item.new('cola')
-# puts cola.get_price
-
-# DRINK_PRICE = {
-#     cider: 100,
-#     cola: 150,
-#   }
-
-#   puts DRINK_PRICE[:cola]
