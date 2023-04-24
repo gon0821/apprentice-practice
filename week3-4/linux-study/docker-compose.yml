@@ -1,0 +1,14 @@
+# Docker Composeのバージョンを指定
+version: '3.7'
+
+# セクション名
+services:
+  # サービスの名前を指定
+  app:
+  # ビルドするDockerfileのPathを指定
+    build: .
+  # コンテナの起動時にttyを有効化する設定
+    tty: true
+  #　ホストマシンとコンテナでファイルを共有する設定（同期みたいなイメージ）
+    volumes:
+      - .:/linux-study
