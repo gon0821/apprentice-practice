@@ -28,6 +28,7 @@ class Game
     # ディーラーの3枚目以降
     @dealer.dealer_turn(@deck,@hand) unless @hand.busted?(@player.cards)
 
+    # 結果を表示
     puts "#{@player.name}の得点は#{@hand.calculate_score(@player.cards)}です。"
     puts "#{@dealer.name}の得点は#{@hand.calculate_score(@dealer.cards)}です。"
 
