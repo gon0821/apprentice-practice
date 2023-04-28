@@ -7,7 +7,7 @@ RUN yes | unminimize
 # パッケージリストを更新し、より新しいバージョンのパッケージをインストールするための記述
 RUN apt-get update && \
 # 必要なパッケージをインストール（今回はvim, tmux, lessをインストール）
-    apt-get install -y locales vim tmux less bc
+    apt-get install -y locales vim tmux less bc 
 
 # 非対話型でtzdataパッケージ（タイムゾーンに関連する情報を提供）をインストール
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
