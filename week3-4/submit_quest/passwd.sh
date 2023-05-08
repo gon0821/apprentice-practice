@@ -13,7 +13,7 @@ add_password()
                 mkdir "$directory"
         fi
         # 入力完了したら管理ファイルへ保存
-        echo "${service} : ${user} : ${passwd}" >> "${directory}/managed_file2.txt"
+        echo "${service} : ${user} : ${passwd}" >> "${directory}/managed_file.txt"
 
         echo "パスワードの追加は成功しました。"
 }
