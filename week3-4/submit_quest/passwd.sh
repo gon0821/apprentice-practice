@@ -23,7 +23,7 @@ get_password()
 {
         read -p "サービス名を入力してください : " service
 
-        file="${HOME}/saved_passwd/managed_file2.txt"
+        file="${HOME}/saved_passwd/managed_file.txt"
 
         # サービス名が管理ファイルに登録されていれば表示させる
         if grep -wq  "${service}" $file; then
