@@ -2,3 +2,5 @@
 Week 1-2 Ruby/オブジェクト指向
 
 Week 3-4 Linux/Git,GitHub
+
+Week 5-6 データベース/SQL
