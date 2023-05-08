@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# パスワード保存機能(Add Password)
 add_password()
 {
         read -p "サービス名を入力してください : " service
@@ -17,6 +18,7 @@ add_password()
         echo "パスワードの追加は成功しました。"
 }
 
+# パスワード表示機能(Get Password)
 get_password()
 {
         read -p "サービス名を入力してください : " service
