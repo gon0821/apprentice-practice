@@ -27,7 +27,7 @@
 
 ▼呼び出し
 ```bash
-./password_manager.sh
+./passwd.sh
 ```
 
 シェルスクリプトを実行すると、以下のメニューが表示されます。
