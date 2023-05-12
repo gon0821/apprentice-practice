@@ -1,0 +1,34 @@
+@startuml
+
+entity users {
+  * user_id
+  --
+  user_name
+}
+
+entity items {
+  * item_id
+  --
+  item_name
+  category_id(fk)
+  price
+}
+
+entity categories {
+  * category_id
+  --
+  category_name
+}
+
+entity purchase_logs {
+  * user_id(fk)
+  * item_id(fk)
+  * purchase_date
+  --
+}
+
+categories ||--|{ items
+users ||--|{ purchase_logs
+items ||--|{ purchase_logs
+
+@enduml
