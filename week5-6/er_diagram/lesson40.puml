@@ -1,0 +1,59 @@
+@startuml
+
+entity users {
+  * user_id
+  --
+  user_name
+}
+
+entity genres {
+  * genre_id
+  --
+  genre_name
+}
+
+entity stations {
+  * station_id
+  --
+  station_name
+}
+
+entity restaurants {
+  * restaurant_id
+  --
+  restaurant_name
+  avg_point
+  genre_id(fk)
+  station_id(fk)
+}
+
+entity restaurant_geners {
+  * restaurant_id(fk)
+  * genre_id(fk)
+  --
+}
+
+entity restaurant_stations {
+  * restaurant_id(fk)
+  * station_id(fk)
+  --
+}
+
+entity reviews {
+  * user_id(fk)
+  * restaurant_id(fk)
+  --
+  review_point
+  review_content
+}
+
+genres ||-r--|{ restaurant_geners
+stations ||--|{ restaurant_stations
+restaurants ||-d--|{ restaurant_geners
+restaurants ||-d--|{ restaurant_stations
+
+users ||--|{ reviews
+restaurants ||-l--|{ reviews
+' items ||--|{ purchase_logs
+
+@enduml

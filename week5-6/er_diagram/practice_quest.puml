@@ -1,0 +1,29 @@
+@startuml
+
+entity programs {
+  * program_id
+  --
+  movie_title
+  detail
+  length
+  release_date
+  views
+}
+
+entity genres {
+  * genre_id
+  --
+  genre_name
+}
+
+
+' genres ||-r--|{ restaurant_geners
+' stations ||--|{ restaurant_stations
+' restaurants ||-d--|{ restaurant_geners
+' restaurants ||-d--|{ restaurant_stations
+
+' users ||--|{ reviews
+' restaurants ||-l--|{ reviews
+
+
+@enduml
