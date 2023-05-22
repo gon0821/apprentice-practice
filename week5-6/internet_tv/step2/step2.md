@@ -2,7 +2,7 @@
 
 ### １．DockerCompose上でMySQLを起動させる
 
-Dockerfile、docker-compose.ymlファイルがある「internet_tvディレクトリ内」で下記コマンドを実行し、コンテナを起動させます。
+Dockerfile、docker-compose.ymlファイルがある「internet_tv」ディレクトリ内で下記コマンドを実行し、コンテナを起動させます。
 ```
 docker-compose up -d
 ```
