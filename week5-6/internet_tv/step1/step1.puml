@@ -1,0 +1,66 @@
+@startuml
+
+entity genres {
+  * genre_id
+  --
+  genre_name
+}
+
+entity programs {
+  * program_id
+  --
+  program_title
+  detail
+}
+
+entity program_genre {
+  * program_id(FK)
+  * genre_id(FK)
+  --
+}
+
+entity channels {
+  * channel_id
+  --
+  channel_name
+}
+
+entity program_seasons {
+  * program_seasons_id
+  --
+  program_id(FK)
+  season_id
+}
+
+entity episodes {
+  * episode_id
+  --
+  episode_num
+  episode_title
+  discripiton
+  duration
+  release_date
+  program_season_id(FK)
+}
+
+entity program_list {
+  * list_id
+  --
+  start_time
+  end_time
+  episode_id(FK)
+  channel_id(FK)
+  views
+}
+
+
+genres ||-r--|{ program_genre
+programs ||--|{ program_genre
+programs ||--|{ program_seasons
+program_seasons ||--|{ episodes
+episodes ||--|{ program_list
+channels ||--|{ program_list
+
+
+
+@enduml
