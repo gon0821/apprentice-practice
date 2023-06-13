@@ -4,7 +4,7 @@ class TodosController < ApplicationController
 
   def index
     todos = Todo.all
-    render json: { todo: todos.as_json(only: [:id, :title])}
+    render json: { todos: todos.as_json(only: [:id, :title])}
   end
 
   def create
