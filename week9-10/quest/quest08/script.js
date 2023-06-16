@@ -1,4 +1,4 @@
-// const api = 'http://localhost:3000'; // API の URL に置き換える
+const api = 'http://localhost:3000'; // API の URL に置き換える
 
 function addTodo() {
   const title = document.getElementById('new-todo').value;
