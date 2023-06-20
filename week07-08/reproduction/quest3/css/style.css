@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+body{
+  font-size: 16px;
+  font-family: -apple-system,
+    system-ui,
+    'Noto Sans JP',
+    sans-serif;
+  color: #092C49;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(15, 44, 73);
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+.page-header {
+  margin-top: 306px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  background-color: gainsboro;
+}
+
+.header-left {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.header-days {
+  font-weight: 800;
+}
+
+.main-nav {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+
+}
+
+.main-nav li {
+  padding: 18px 28px;
+}
+
+.main-nav a:hover {
+  color: #9F38F7;
+}
+
+.top {
+  background-image: url(../img/main-vsual.png);
+  background-size: cover;
+  text-align: center;
+  height: 292px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-title h3 {
+  padding: 48px 0 43px 0;
+}
+
+.deitora-about {
+  display: flex;
+}
+
+.deitora-about img {
+  width: 46%;
+  margin-right: 31px;
+  height: auto;
+}
+
+.deitora-explain p {
+  font-size: 14px;
+  line-height: 19.6px;
+  width: 92%;
+}
+
+.section-title h4 {
+  padding: 24px 0 43px 0;
+}
+
+.lesson-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lesson-list img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.lesson-list a {
+  width: 30%;
+  font-size: 14px;
+  padding-bottom: 19px;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.section-title h5 {
+  padding: 70px 0 40px 0;
+}
+
+.contact-form p {
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+.email {
+  display: block;
+  margin: 0 auto;
+  width: 463px;
+  height: 48px;
+  border-radius: 24px;
+  border-color: #CCCCCC;
+  border-width: 0.5px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.submit {
+  display: block;
+  width: 297px;
+  height: 54px;
+  margin: 24px auto 100px auto;
+  padding: 16px 86px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #EC6C63;
+  border: none;
+}
+
+.page-footer {
+  border-color: #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  width: 960px;
+  height: 500px;
+  padding-top:19px;
+  margin: 0 auto;
+}
+
+.page-footer p{
+  font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
